@@ -78,7 +78,7 @@ public class GrabWithLeftHand : MonoBehaviour
         if (grabbedRigidbody != null)
         {
             grabbedRigidbody.isKinematic = false;
-            grabbedRigidbody.velocity = velocity;
+            grabbedRigidbody.linearVelocity = velocity;
             grabbedRigidbody.angularVelocity = angularVelocity * Mathf.Deg2Rad;
         }
 
